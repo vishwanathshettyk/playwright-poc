@@ -18,10 +18,10 @@ module.exports = async environment => {
 
     if(process.env.Env == "tst")
     {
-      process.env.url = "https://test.meanstester.ing.net";
+      process.env.url = "https://test.application.net";
       
     }else if(process.env.Env =="acc")
     {
-      process.env.url = "https://accp.meanstester.ing.net";
+      process.env.url = "https://acc.application.net";
     }
   };

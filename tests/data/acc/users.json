@@ -1,12 +1,12 @@
 {
     "validUsers":{
-            "cif": "001002748",
-             "dob": "01/05/1987"
+            "username": "",
+             "dob": ""
             },
     "invalidUsers": {
-        "cif":"001002748",
-        "dob": "08071998",
-        "invalidCustomerCode11": "00100274890",
-        "invalidCustomerCode6":"000100"
+        "username":"",
+        "dob": "",
+        "invalidusername": "",
+        "invalidusername2":""
     }
 }
