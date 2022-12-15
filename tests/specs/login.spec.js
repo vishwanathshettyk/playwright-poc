@@ -17,7 +17,7 @@ const base  = require('@playwright/test');
 const test = base.test.extend({
     login: async ({ page }, use) => {
   
-        const launchBrowser = await page.goto(baseUrl + '/it-identification');
+        const launchBrowser = await page.goto(baseUrl + '/login');
         await use(page);
     },
     enterCredentials: async ({ page }, use) => {
@@ -25,7 +25,7 @@ const test = base.test.extend({
         loginPage = new IdentifcationPage(page);
         var jsonData = fs.readFileSync(path);
         data = JSON.parse(jsonData.toString()); 
-        await loginPage.enterCustomerCif(data.validUsers.cif);
+        await loginPage.enterCustomerCif(data.validUsers.username);
         await loginPage.enterDateOfBirth(data.validUsers.dob);
         await loginPage.clickContinueButton();
         await use(page);

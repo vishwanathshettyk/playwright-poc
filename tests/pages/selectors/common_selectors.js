@@ -1,5 +1,5 @@
 const common_selectors = {
-    app: "body > ing-app-tpa-means-tester",
+    app: "body",
     cardIntor: "div.card.intro",
     mainContainer:  "div#meansContainer",
     container: "div.container",
@@ -7,7 +7,7 @@ const common_selectors = {
     customercode: '#customerCode',
     dateofbirth: '#dateOfBirth',
     continue_button: '.continue__button',
-    ingValidationFeedback :'[data-tag-name="ing-validation-feedback"]'
+    ingValidationFeedback :'[data-tag-name="feedback"]'
     
   };
   
